@@ -1,0 +1,23 @@
+{
+    "name": "plate_number",
+    "version": "1.0.0",
+    "description": "simple api to fetch brief plate number details",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.6",
+        "puppeteer": "^5.4.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.12.1"
+    },
+    "scripts": {
+        "test": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "author": "IAmMasterCraft",
+    "license": "ISC",
+    "engines": {
+        "node": "14.x"
+    }
+}
