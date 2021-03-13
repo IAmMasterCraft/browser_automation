@@ -17,12 +17,12 @@ app.get("/api/plate-number/", (request, response) => {
 
 app.get("/api/check-package/:name", async(request, response) => {
     const packageName = await package.getPackageNameInfo(request.params.name);
-    await response.status(201).json(packageName);
+    await response.status(200).json(packageName);
 });
 
 app.post("/api/plate-number/", async (request, response) => {
     const plateInfo = await plateDetails.getNumberInfo(request.body.plate_number);
-    await response.status(201).send(plateInfo);
+    await response.status(200).send(plateInfo);
 });
 
 const port = process.env.PORT || 3000;
