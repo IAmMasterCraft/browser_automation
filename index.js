@@ -1,6 +1,9 @@
+// cors
+const cors = require("cors");
 const express = require("express");
 const app = express();
 app.use(express.json());
+app.use(cors());
 const plateDetails = require("./engine/numberInfo");
 const package = require("./engine/packageName");
 
@@ -9,7 +12,7 @@ app.get('/', (request, response) => {
 });
 
 app.get("/api/plate-number/", (request, response) => {
-  response.send("Hey there! You don miss road.");
+  response.send("Hey there! Documentation never set.");
 });
 
 app.get("/api/check-package/:name", async(request, response) => {
